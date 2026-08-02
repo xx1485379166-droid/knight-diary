@@ -1,0 +1,25 @@
+{
+  "name": "骑士奇思妙想",
+  "short_name": "奇思妙想",
+  "description": "记录每日奇思妙想，让日记碎片拼出你的故事世界",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#F5F0E6",
+  "theme_color": "#F5F0E6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' rx='40' fill='%23F4A261'/><text x='96' y='110' text-anchor='middle' font-size='80'>🛡️</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='100' fill='%23F4A261'/><text x='256' y='290' text-anchor='middle' font-size='220'>🛡️</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "lang": "zh-CN"
+}
