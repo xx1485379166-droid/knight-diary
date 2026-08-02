@@ -791,6 +791,7 @@ function initSampleData() {
   if (DATA.diaries.length > 0) return;
   const now = Date.now();
   const samples = [
+    { date: now, mood: '😊', tag: '成长', title: '不卑不亢，是我给自己的礼物', content: '刚看了一个视频，讲一个普通女孩和一个家世显赫的男生走到一起的故事。不是因为门当户对，而是灵魂契合——他们找到了彼此内心深处那个真正对的人。\n\n但真正触动我的不是爱情本身，而是那个女孩身上散发出来的气质：不卑不亢。\n\n她可以坦然地跟任何人交流——对身份比她高的人不讨好、不谄媚；对身份比她低的人不傲慢、不轻视。那种由内而外的从容，让我忍不住想到家庭教育的意义。一个人的底气，从来不是来自外在的条件，而是来自内心对自己的认可。\n\n我也希望自己不断成长，把更多的心思放回自己身上——了解自己，完全接纳自己，不断改进自己。\n\n不卑不亢。这四个字，就是我想成为的样子。', words: 218 },
     { date: now - 86400000 * 1, mood: '😊', tag: '旅行', content: '今天看到了一朵像鲸鱼的云，整个下午都在想它要去哪里...', words: 26 },
     { date: now - 86400000 * 2, mood: '🤩', tag: '创作', content: '开始构思一个关于时间旅行的故事，主角是一个会说话的怀表...', words: 28 },
     { date: now - 86400000 * 3, mood: '😌', tag: '日常', content: '下午在咖啡馆坐了很久，看窗外的人来来往往，每个人都有自己的故事。', words: 28 },
@@ -820,13 +821,14 @@ function generateId() { return 'id_' + Date.now() + '_' + Math.random().toString
 initSampleData();
 
 // ========== UTILS ==========
-const topics = ['日常', '旅行', '创作', '情感', '美食'];
+const topics = ['日常', '旅行', '创作', '情感', '美食', '成长'];
 const topicColors = {
   '日常': '#F4A261',
   '旅行': '#E76F51',
   '创作': '#2A9D8F',
   '情感': '#E9C46A',
-  '美食': '#6D6875'
+  '美食': '#6D6875',
+  '成长': '#D4A5A5'
 };
 
 function getGreeting() {
