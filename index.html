@@ -848,7 +848,7 @@ function seedRealDiaries() {
   const baseTime = Date.now();
   const realEntries = [
     {
-      date: baseTime - 86400000 * 1,
+      date: baseTime,
       mood: '💭',
       tag: '情感',
       tags: ['情感'],
@@ -857,7 +857,7 @@ function seedRealDiaries() {
       words: 218
     },
     {
-      date: baseTime - 86400000 * 2,
+      date: baseTime - 86400000 * 1,
       mood: '😊',
       tag: '成长',
       tags: ['成长'],
@@ -1460,8 +1460,9 @@ function clearData() {
 }
 
 function doClearData() {
-  DATA = { diaries: [], stories: [], settings: { remindWeekly: true, remindTime: '周日 20:00' } };
+  DATA = { diaries: [], stories: [], settings: { remindWeekly: true, remindTime: '每天 22:00' } };
   saveData(DATA);
+  localStorage.removeItem(SEEDED_KEY);
   closeModal();
   renderDiaryPage();
   renderTopicsPage();
